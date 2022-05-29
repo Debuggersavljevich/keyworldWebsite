@@ -98,11 +98,72 @@ header.sticky ul li a{
 }
 
 
-.main{
-    display: flex;
-    justify-content: center;
-    padding: 1rem;
+
+/** Nuestros servicios **/
+
+.services{
+  background: #3f4c6b;
+  text-align: center;
 }
+.services h1{
+  display: inline-block;
+  text-transform: uppercase;
+  border-bottom: 4px solid #3498db;
+  font-size: 40px;
+  padding-bottom: 10px;
+  margin-top: 40px;
+  color: white;
+}
+.cen{
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
+  padding: 20px;
+}
+.service{
+  display: inline-block;
+  width: calc(100% / 3);
+  margin: 0 -2px;
+  padding: 50px;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: 0.4s;
+  color: white;
+}
+.service:hover{
+  background: gray;
+  
+}
+.service i{
+  color: #3498db;
+  font-size: 34px;
+  margin-bottom: 30px;
+}
+.service h2{
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin: 0;
+}
+.service p{
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+}
+@media screen and (max-width: 800px) {
+  .service{
+    width: 50%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .service{
+    width: 100%;
+  }
+}
+
+
+
+
 
 
 /** TIENDA **/
@@ -116,7 +177,6 @@ header.sticky ul li a{
     width: 654px;
     margin: 50px auto;
     border-radius: 7px 7px 7px 7px;
-    /* VIA CSS MATIC https://goo.gl/cIbnS */
     -webkit-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
     -moz-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
     box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
@@ -239,7 +299,7 @@ header.sticky ul li a{
 }
 
 .nosotros{
-    align-items: center;
+  align-items: center;
   background-color: #f2f2f2;
   display: flex;
   font-family: "Merriweather", serif;
@@ -255,7 +315,7 @@ header.sticky ul li a{
     flex-direction: column;
     width: 280px;
   }
-  .container {
+  .container-us {
     border-radius: 50%;
     height: 312px;
     -webkit-tap-highlight-color: transparent;
@@ -263,7 +323,7 @@ header.sticky ul li a{
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     width: 400px;
   }
-  .container:after {
+  .container-us:after {
     background-color: #f2f2f2;
     content: "";
     height: 10px;
@@ -271,7 +331,7 @@ header.sticky ul li a{
     top: 390px;
     width: 100%;
   }
-  .container:hover {
+  .container-us:hover {
     transform: scale(0.54);
   }
   .container-inner {
